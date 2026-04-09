@@ -3,12 +3,12 @@ import os
 ##Code Written By @ItsMeMaster
 
 class Config(object):
-    BOT_TOKEN = "8525803667:AAEjpylk_qaZ62O_gIZmch46S8VQNYxcY1M"
+    BOT_TOKEN = "8232394871:AAEv6zpiK94--GTtw0rh1_RphxBYvshW1bU"
     DB_NAME = "nattu"
-    API_ID = "6886135"
-    API_HASH = "ee20a1c8a8e44eaa638b7254cbcc3012"
-    ADMIN_ID = 8532700793
-    DB_URL = "mongodb+srv://nattu:nattu@cluster0.quvds.mongodb.net/?appName=Cluster0"
-    LOG_CHANNEL = "-1003873871474" # Your Log Channel ID (Bot ko ADMIN BNAYE)
+    API_ID = "20937420"
+    API_HASH = "09d7f6744feb17759304df65666961da"
+    ADMIN_ID = 7881009185
+    DB_URL = "mongodb+srv://abhi736902:Abhishek2007@cluster0.3lujetq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+    LOG_CHANNEL = "-1003812928595" # Your Log Channel ID (Bot ko ADMIN BNAYE)
     USERLINK = "https://t.me/Natking_uploader_bot"
     TUTORIAL_VIDEO = "https://t.me/Natking_uploader_bot"
