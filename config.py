@@ -3,7 +3,7 @@ import os
 ##Code Written By @ItsMeMaster
 
 class Config(object):
-    BOT_TOKEN = "8648312185:AAGIIz-YUr93gGV_IeS5sVeoUZqwfO5L46A"
+    BOT_TOKEN = "8232394871:AAHjldYXTJjon9sOO-AmJExYdU-k8gZDyXw"
     DB_NAME = "nattu"
     API_ID = "20937420"
     API_HASH = "09d7f6744feb17759304df65666961da"
