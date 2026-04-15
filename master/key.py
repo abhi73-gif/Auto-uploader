@@ -41,13 +41,33 @@ db_instance = Database(DB_URL, DB_NAME)
 
 
 async def get_appx_api():
-    """Fetch all appx API entries from database."""
     try:
         apis = await db_instance.get_appx_api()
+
+        # agar DB empty hai
+        if not apis:
+            raise Exception("DB empty")
+
         return apis
+
     except Exception as e:
-        print(f"Error getting appx api: {e}")
-        return []
+        print(f"DB Error: {e} | Using JSON fallback")
+
+        try:
+            import json
+            with open("appxapis.json", "r") as f:
+                data = json.load(f)
+
+                # name → app_name fix
+                for item in data:
+                    if "app_name" not in item and "name" in item:
+                        item["app_name"] = item["name"]
+
+                return data
+
+        except Exception as e:
+            print(f"JSON Error: {e}")
+            return []
 
 
 async def gen_alpha_paid_kb():
